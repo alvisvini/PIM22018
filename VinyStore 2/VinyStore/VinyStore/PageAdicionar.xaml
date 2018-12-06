@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VinyStore.PageAdicionar">
+  <ContentPage.Content>
+      <StackLayout>
+          <Label Text="Cadastro de nova conta" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkBlue" FontSize="16"/>
+          <Label Text="Título da Conta" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkSlateBlue" FontSize="14"/>
+            <Entry Placeholder="Digite o título" PlaceholderColor="Gray" BackgroundColor="#FFFFFF" x:Name="Titulo" TextColor="Black"/>
+          <Label Text="Descrição da conta" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkSlateBlue" FontSize="14"/>
+            <Entry Placeholder="Digite a descrição" PlaceholderColor="Gray" BackgroundColor="#FFFFFF" x:Name="Descricao" TextColor="Black"/>
+          <Label Text="Valor da conta" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkSlateBlue" FontSize="14"/>
+            <Entry Placeholder="Digite o valor da conta" PlaceholderColor="Gray" BackgroundColor="#FFFFFF" x:Name="Valor" TextColor="Black" Keyboard="Numeric"/>
+          <Label Text="Tipo da Conta" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkSlateBlue" FontSize="14"/>
+            <Picker x:Name="Tipo" Title="Tipo da Conta" IsEnabled="True" SelectedIndexChanged="TipoSelecionado">
+              <Picker.Items>
+                    <x:String>Entrada</x:String>
+                    <x:String>Saída</x:String>
+              </Picker.Items>
+           </Picker>
+
+
+            <Button Text="Adicionar Conta" TextColor="#FFFFFF" BackgroundColor="#00416B" Clicked="Adicionar"/>
+        </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

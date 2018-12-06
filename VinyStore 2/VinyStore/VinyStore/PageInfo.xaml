@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VinyStore.PageInfo">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Informações do caixa" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkBlue" FontSize="18"/>
+            <Label x:Name="EntradaText" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkBlue" FontSize="14"/>
+            <Label x:Name="SaidaText"   HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkBlue" FontSize="14"/>
+            <Label x:Name="LucroText"   HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkBlue" FontSize="12"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
