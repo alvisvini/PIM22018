@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:VinyStore"
+             x:Class="VinyStore.PageLista"
+             Title="Fluxo de Caixa MiniPack">
+    
+       
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Adicionar Compra" HorizontalOptions="FillAndExpand" Margin="15" Clicked="Adicionar"></Button>
+                <Button Text="Informações" HorizontalOptions="FillAndExpand" Margin="15" Clicked="Informacoes"></Button>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Tipo da Conta" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkSlateBlue" FontSize="14"/>
+                <Picker x:Name="Tipo" Title="Tipo da Conta" IsEnabled="True" SelectedIndexChanged="TipoSelecionado">
+                  <Picker.Items>
+                        <x:String>Entrada</x:String>
+                        <x:String>Saída</x:String>
+                        <x:String>Tudo</x:String>
+                  </Picker.Items>
+               </Picker>
+                <Label Text="Filtrar por mês" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="DarkSlateBlue" FontSize="14"/>
+                <Picker x:Name="Mes" Title="Mes" IsEnabled="True" SelectedIndexChanged="TipoSelecionado">
+                  <Picker.Items>
+                        <x:String>Todos</x:String>
+                        <x:String>Janeiro</x:String>
+                        <x:String>Fevereiro</x:String>
+                        <x:String>Março</x:String>
+                        <x:String>Abril</x:String>
+                        <x:String>Maio</x:String>
+                        <x:String>Junho</x:String>
+                        <x:String>Julho</x:String>
+                        <x:String>Agosto</x:String>
+                        <x:String>Setembro</x:String>
+                        <x:String>Outubro</x:String>
+                        <x:String>Novembro</x:String>
+                        <x:String>Dezembro</x:String>
+                  </Picker.Items>
+               </Picker>
+            </StackLayout>
+            <ListView x:Name="mylist" ItemsSource="{Binding}" VerticalOptions="FillAndExpand" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <local:ContaListView />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label x:Name="TitleText" Text="Informações do caixa" HorizontalOptions="Center" VerticalOptions="Center" TextColor="DarkBlue" FontSize="18"/>
+            <Label x:Name="EntradaText" HorizontalOptions="Center" VerticalOptions="Center" TextColor="DarkBlue" FontSize="14"/>
+            <Label x:Name="SaidaText"   HorizontalOptions="Center" VerticalOptions="Center" TextColor="DarkBlue" FontSize="14"/>
+            <Label x:Name="LucroText"   HorizontalOptions="Center" VerticalOptions="Center" TextColor="DarkBlue" FontSize="14"/>
+        </StackLayout>
+      
+</ContentPage>

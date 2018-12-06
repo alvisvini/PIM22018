@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{75FDA217-006B-4821-BB82-DB357BE3CCE4}|Default">
+  <MonoDevelop.Ide.ItemProperties.VinyStore.Android AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" PreferredExecutionTarget="Android.Nexus_5_API_26" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="VinyStore/VinyStore/App.xaml.cs">
+    <Files>
+      <File FileName="VinyStore/VinyStore/PageLista.xaml" Line="6" Column="44" />
+      <File FileName="VinyStore/VinyStore/PageAdicionar.xaml" Line="14" Column="11" />
+      <File FileName="VinyStore/VinyStore/PageInfo.xaml" Line="10" Column="135" />
+      <File FileName="VinyStore/VinyStore/ContaListView.xaml" Line="13" Column="98" />
+      <File FileName="VinyStore/VinyStore/PageInfo.xaml.cs" Line="22" Column="35" />
+      <File FileName="VinyStore/VinyStore/ContaListView.xaml.cs" Line="20" Column="2" />
+      <File FileName="VinyStore/VinyStore/Contas/Calculos.cs" Line="34" Column="47" />
+      <File FileName="VinyStore/VinyStore/Contas/Conta.cs" Line="1" Column="1" />
+      <File FileName="VinyStore/VinyStore.Android/MainActivity.cs" Line="12" Column="24" />
+      <File FileName="VinyStore/VinyStore.Android/Properties/AndroidManifest.xml" Line="5" Column="12" />
+      <File FileName="VinyStore/VinyStore.Android/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="VinyStore/VinyStore/App.xaml" Line="8" Column="15" />
+      <File FileName="VinyStore/VinyStore/App.xaml.cs" Line="22" Column="49" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
